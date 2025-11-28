@@ -40,7 +40,7 @@ export default function Home() {
         <div className="hero-bg">loookkk</div>
       </div>
 
-      <ImageTrail images={images} />
+      <ImageTrail images={images} count={9} size={170} />
 
         <footer className="site-footer">
         <div>Image Trail Effects</div>

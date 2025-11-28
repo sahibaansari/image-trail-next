@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import ImageTrail from "@/components/ImageTrail";
+import ImageTrail from "@/components/ImageTrailDemo5";
 
 export default function Home() {
   const images = [
@@ -10,11 +10,6 @@ export default function Home() {
     "/imgs/4.jpg",
     "/imgs/5.jpg",
     "/imgs/6.jpg",
-    "/imgs/7.jpg",
-    "/imgs/8.jpg",
-    "/imgs/9.jpg",
-    "/imgs/10.jpg",
-
   ];
 
   return (
@@ -27,7 +22,7 @@ export default function Home() {
         <nav className="right">
   <a
     className="github"
-   href="https://github.com/sahibaansari/image-trail-next"
+    href="https://github.com/YOUR_GITHUB_USERNAME/image-trail-next"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -42,18 +37,17 @@ export default function Home() {
 
       <ImageTrail images={images} />
 
-        <footer className="site-footer">
+      <footer className="site-footer">
         <div>Image Trail Effects</div>
+       <div className="links">
+  <Link href="/trail/1">1</Link> &nbsp;
+  <Link href="/trail/2">2</Link> &nbsp;
+  <Link href="/trail/3">3</Link> &nbsp;
+  <Link href="/trail/4">4</Link> &nbsp;
+  <Link href="/trail/5">5</Link> &nbsp;
 
-        <div className="links">
-          <Link href="/trail/1">1</Link> &nbsp;
-          <Link href="/trail/2">2</Link> &nbsp;
-          <Link href="/trail/3">3</Link> &nbsp;
-          <Link href="/trail/4">4</Link> &nbsp;
-          <Link href="/trail/5">5</Link> &nbsp;
-         
-        </div>
-      </footer> 
+</div>
+      </footer>
     </main>
   );
 }

@@ -77,6 +77,14 @@ body{
   transform-origin: center center;
   transition: opacity 0.25s linear; /* keeps fade smooth on end */
 }
+.trail-img {
+   width: 200px;       /* FIXES THE OFFSET ISSUE */
+  height: auto;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  will-change: transform, opacity;
+}
 
 
 /* footer area */
