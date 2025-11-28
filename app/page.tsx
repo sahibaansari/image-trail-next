@@ -1,5 +1,6 @@
 import Link from "next/link";
-
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import ImageTrail from "@/components/ImageTrail";
 
 export default function Home() {
@@ -19,22 +20,7 @@ export default function Home() {
 
   return (
     <main className="app-container">
-      <header className="site-header">
-        <div className="brand">
-          <h1>Sahiba Mahamud Ansari</h1>
-          <p>— Personality Stylist</p>
-        </div>
-        <nav className="right">
-  <a
-    className="github"
-   href="https://github.com/sahibaansari/image-trail-next"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Github
-  </a>
-</nav>
-      </header>
+     <Header />
 
       <div className="hero">
         <div className="hero-bg">loookkk</div>
@@ -42,18 +28,7 @@ export default function Home() {
 
       <ImageTrail images={images} />
 
-        <footer className="site-footer">
-        <div>Image Trail Effects</div>
-
-        <div className="links">
-          <Link href="/trail/1">1</Link> &nbsp;
-          <Link href="/trail/2">2</Link> &nbsp;
-          <Link href="/trail/3">3</Link> &nbsp;
-          <Link href="/trail/4">4</Link> &nbsp;
-          <Link href="/trail/5">5</Link> &nbsp;
-         
-        </div>
-      </footer> 
+       <Footer />
     </main>
   );
 }
